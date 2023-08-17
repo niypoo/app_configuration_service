@@ -1,11 +1,8 @@
-# app_config_service
+# app_configuration_service
 
 A new Flutter module project.
 
 ## Getting Started
+the "app_configuration_service" service that designed by flutter(dart) depends on GetX for manage all application settings , options and information used first time for "Mesakar Apps"
 
-For help getting started with Flutter development, view the online
-[documentation](https://flutter.dev/).
 
-For instructions integrating Flutter modules to your existing applications,
-see the [add-to-app documentation](https://flutter.dev/docs/development/add-to-app).
