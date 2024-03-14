@@ -7,20 +7,20 @@ class AppConfigService extends GetxService {
 
   // APP INFO
   final String appName;
-  final String? appWebsite;
+  final String appWebsite;
   final String localStorageContainer;
   final String appIcon;
-  final String? appIconPhotoUrl;
+  final String appIconPhotoUrl;
 
   // Support Info
-  final String? dynamicLink;
+  final String dynamicLink;
   final String supportEmail;
   final String? firebaseFunctionsUrl;
   final String? supportWhatsappNumber;
   final String termsUrl;
   final String privacyUrl;
   final String? tutorialLink;
-  final String? invitationImage;
+  final String invitationImage;
 
   // Bundle Info
   final String? googlePlayIdentifier;
@@ -49,18 +49,18 @@ class AppConfigService extends GetxService {
   AppConfigService({
     this.appName = 'Un-named App',
     this.appIcon = 'assets/icon/icon.jpeg',
-    this.appWebsite,
+    required this.appWebsite,
     this.localStorageContainer = 'app.storage',
-    this.appIconPhotoUrl,
+    required this.appIconPhotoUrl,
     // Support Info
-    this.dynamicLink,
+    required this.dynamicLink,
     required this.supportEmail,
     this.firebaseFunctionsUrl,
     this.supportWhatsappNumber,
     required this.termsUrl,
     required this.privacyUrl,
     this.tutorialLink,
-    this.invitationImage,
+    required this.invitationImage,
 
     // Bundle Info
     this.googlePlayIdentifier,
