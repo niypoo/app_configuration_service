@@ -11,23 +11,21 @@ class AppConfigService extends GetxService {
   final String localStorageContainer;
   final String appIcon;
   final String appIconPhotoUrl;
-  final String deeplinkURL;
-  final String deeplinkSchema;
 
   // Support Info
+  final String dynamicLink;
   final String supportEmail;
   final String? firebaseFunctionsUrl;
+  final String? supportWhatsappNumber;
   final String termsUrl;
   final String privacyUrl;
-  // final String dynamicLink;
-  // final String? supportWhatsappNumber;
-  // final String? tutorialLink;
-  // final String invitationImage;
+  final String? tutorialLink;
+  final String invitationImage;
 
   // Bundle Info
-  final String googlePlayIdentifier;
-  final String bundleId;
-  final int appStoreIdentifier;
+  final String? googlePlayIdentifier;
+  final String? bundleId;
+  final int? appStoreIdentifier;
 
   // Animation
   final Duration duration;
@@ -51,31 +49,28 @@ class AppConfigService extends GetxService {
   AppConfigService({
     this.appName = 'Un-named App',
     this.appIcon = 'assets/icon/icon.jpeg',
-    this.localStorageContainer = 'app.storage',
-    required this.termsUrl,
-    required this.privacyUrl,
     required this.appWebsite,
+    this.localStorageContainer = 'app.storage',
     required this.appIconPhotoUrl,
-    required this.deeplinkSchema,
-    required this.deeplinkURL,
-
-    // Bundle Info
-    required this.googlePlayIdentifier,
-    required this.bundleId,
-    required this.appStoreIdentifier,
-
     // Support Info
-    // required this.dynamicLink,
+    required this.dynamicLink,
     required this.supportEmail,
     this.firebaseFunctionsUrl,
-    // this.supportWhatsappNumber,
-    // this.tutorialLink,
-    // required this.invitationImage,
+    this.supportWhatsappNumber,
+    required this.termsUrl,
+    required this.privacyUrl,
+    this.tutorialLink,
+    required this.invitationImage,
+
+    // Bundle Info
+    this.googlePlayIdentifier,
+    this.bundleId,
+    this.appStoreIdentifier,
 
     // Animation
     this.curve = Curves.easeInOut,
     this.duration = const Duration(milliseconds: 300),
-    this.radius = 15,
+    this.radius = 22,
 
     // Space
     this.space,
