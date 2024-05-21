@@ -7,6 +7,7 @@ class AppConfigService extends GetxService {
 
   // APP INFO
   final String appName;
+  final double appVersion;
   final String appWebsite;
   final String appDomain;
   final String localStorageContainer;
@@ -49,6 +50,7 @@ class AppConfigService extends GetxService {
 
   AppConfigService({
     this.appName = 'Un-named App',
+    this.appVersion = 1.0,
     this.appIcon = 'assets/icon/icon.jpeg',
     required this.appWebsite,
     required this.appDomain,
