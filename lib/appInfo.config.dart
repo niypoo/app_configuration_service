@@ -10,6 +10,7 @@ class AppConfigService extends GetxService {
   final double appVersion;
   final String appWebsite;
   final String appDomain;
+  final String deepLinkUrl;
   final String localStorageContainer;
   final String appIcon;
   final String appIconPhotoUrl;
@@ -54,6 +55,7 @@ class AppConfigService extends GetxService {
     this.appIcon = 'assets/icon/icon.jpeg',
     required this.appWebsite,
     required this.appDomain,
+    required this.deepLinkUrl,
     this.localStorageContainer = 'app.storage',
     required this.appIconPhotoUrl,
     // Support Info
